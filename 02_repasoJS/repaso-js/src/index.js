@@ -100,3 +100,69 @@ funcionalidades[0]("Daniel");
 let [funcion, numero] = funcionalidades;
 funcion("Felipe");
 console.log(numero);
+
+
+// PROMESAS
+
+let objetoAConsultar = [
+  {nombre:'Daniel'},
+  {nombre:'Pedro'},
+  {nombre:'Felipe'},
+  {nombre:'Nestor'},
+]
+
+
+let consultarNombre = function(posición){
+
+  return new Promise((resolve, reject)=>{
+    // Lanza respuesta al then
+    if(objetoAConsultar[posición]){
+      resolve(objetoAConsultar[posición]);
+    }else{
+      reject('Dato no exite');
+    }
+  
+    // Lanza respuesta al catch
+  }); 
+  
+}
+
+consultarNombre(2).then(console.log).catch(console.log)
+
+
+// fetch.............................
+// const API_KEY = 'BATA8D9T2GkMUePGXGwJQq1NGNFGdqJg';
+// const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`)
+
+// peticion
+//   .then(res=>{return res.json()})
+//   .then(({data})=>{
+//     let {url} = data.images.original
+//     const img = document.createElement('img')
+//     img.src = url;
+//     document.body.append(img)
+//   }
+//     )
+
+// Con Await y async
+
+let getImagen = async function(){
+
+  try{
+
+    const API_KEY = 'BATA8D9T2GkMUePGXGwJQq1NGNFGdqJg';
+    const respuesta = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`);
+    const {data} = await respuesta.json();
+    let {url} = data.images.original
+    const img = document.createElement('img')
+    img.src = url;
+    document.body.append(img)
+
+
+  }catch(err){
+    console.log(err);
+  }
+ 
+}
+
+getImagen()
