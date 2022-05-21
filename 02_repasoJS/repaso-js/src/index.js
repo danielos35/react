@@ -166,3 +166,7 @@ let getImagen = async function(){
 }
 
 getImagen()
+
+// EStado:
+  // Información de un componente en un punto determinado del tiempo
+  console.log('Estado');
