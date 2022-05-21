@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// Se importa para hacer uso de JSX
+import React from "react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Se importa para renderizar los elementos en nuestra pagina principal
+import ReactDOM from "react-dom/client";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Elemento a renderizar
+const saludo = <h1>Hola Mundo</h1>;
+
+// Elemento donde renderizaré mi aplicación
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+/*
+Renderizar elemento:
+Argumento 1: Elemento a renderizar.
+Argumento 2: Elemento donde voy a renderizar.
+*/
+root.render(saludo);
