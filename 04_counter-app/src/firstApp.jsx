@@ -16,9 +16,11 @@ export const FirstApp = () => {
 */
 
 // NUEVA OPCIÓN
+const elemento = 12;
 export const FirstApp = () => {
   return (
     <>
+      <h1>{elemento}</h1>
       <h1>Hola Mundo</h1>
       <h1>Primera Aplicación</h1>
     </>
