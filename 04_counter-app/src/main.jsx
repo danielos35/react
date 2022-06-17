@@ -15,6 +15,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HelloWordApp />
     <FirstApp />
-    <Props title="Hola mundo" numeros={123} />
+    <Props title="123" numeros={123} />
   </React.StrictMode>
 );
