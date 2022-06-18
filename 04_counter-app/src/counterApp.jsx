@@ -3,12 +3,16 @@ export const CounterApp = ({ value }) => {
   // HOOKS
   const [counter, setCounter] = useState(0);
 
-  const imprimir = function () {
+  const sumar = function () {
     // Forma #1
-    // setCounter(counter + 1);
+    setCounter(counter + 1);
 
     // Forma #2
-    setCounter((contador) => contador + 1);
+    // setCounter((contador) => contador - 1);
+  };
+
+  const restar = function () {
+    setCounter(counter - 1);
   };
 
   return (
@@ -16,7 +20,8 @@ export const CounterApp = ({ value }) => {
       <h1>Counter APP</h1>
       <h1> {counter} </h1>
 
-      <button onClick={imprimir}>+1</button>
+      <button onClick={sumar}>+1</button>
+      <button onClick={restar}>-1</button>
     </>
   );
 };
