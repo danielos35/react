@@ -13,3 +13,10 @@ export const Props = ({ title, numeros }) => {
 Props.propTypes = {
   title: PropTypes.string.isRequired,
 };
+
+
+// DEFAULT PROPS
+Props.defaultProps = {
+  title: 'No hay titulo', 
+  numeros: 12
+}
