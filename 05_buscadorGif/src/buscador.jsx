@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AddCategoria} from "./componentes/agregarCategoria";
 
 export const Buscador = () => {
   const [busquedas, setBusquedas] = useState(["Musica", "Politica"]);
@@ -13,6 +14,9 @@ export const Buscador = () => {
   return (
     <>
       <h1>Buscador Gif</h1>
+
+      <AddCategoria/>
+      
       <button onClick={agregarCategorias}>Agregar categoria</button>
       <ol>
         {busquedas.map((c) => (

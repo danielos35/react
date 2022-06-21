@@ -16,4 +16,11 @@ USESTATE
 - O usar el callBack que puede ser enviado a las funciones de setState =  setState(datos=>[...datos, nuevoDato]).
 - Ejemplo en 05_buscadorGif en buscador.jsx
 
+
+FORMULARIO CON ONCHANGES
+
+- Para el uso de formularios, en los inputs debemos de manejar los onchance, lo cuales escucharan cuando el componente cambie de estado. 
+- Para cambiar el valor de un input debemos de mandar dentro de la función onChange una callback y asignarlo mediante la propiedad event.target.value
+- Ejemplo en 05_buscadorGif/componentes/agregarCategoria.jsx
+
 */
