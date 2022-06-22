@@ -1,19 +1,22 @@
 import { useState } from "react"
 
 
-export const AddCategoria = () => {
+export const AddCategoria = ({setBusquedas}) => {
   
   const [inputValue, setInputValue] = useState('Hola Mundo')
   
-  const enviar = (event)=>{
-    event.preventDefault()
-    console.log(inputValue);
-  }
-  
   const cambiarValor = (event)=>{
     setInputValue(event.target.value);
+    
   }
-
+  
+  const enviar = (event)=>{
+    event.preventDefault()
+    if(inputValue.trim().length<=1)return
+    setBusquedas(busquedas=>[...busquedas,inputValue])
+    setInputValue('')
+  }
+  
 
   return (
 

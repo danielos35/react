@@ -15,7 +15,7 @@ export const Buscador = () => {
     <>
       <h1>Buscador Gif</h1>
 
-      <AddCategoria/>
+      <AddCategoria setBusquedas={setBusquedas} busquedas={busquedas}/>
       
       <button onClick={agregarCategorias}>Agregar categoria</button>
       <ol>
