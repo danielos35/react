@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-export const AddCategoria = ({setBusquedas}) => {
+export const AddCategoria = ({onNewCategory}) => {
   
   const [inputValue, setInputValue] = useState('Hola Mundo')
   
@@ -13,7 +13,9 @@ export const AddCategoria = ({setBusquedas}) => {
   const enviar = (event)=>{
     event.preventDefault()
     if(inputValue.trim().length<=1)return
-    setBusquedas(busquedas=>[...busquedas,inputValue])
+
+    onNewCategory(inputValue.trim())
+    // setBusquedas(busquedas=>[...busquedas,inputValue])
     setInputValue('')
   }
   
