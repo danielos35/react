@@ -1,8 +1,11 @@
+import { useEffect } from "react"
 import { getGifs } from "../funciones/getGifs"
 
 export const Gifs = ({categoria}) => {
 
-    getGifs(categoria)
+    useEffect(()=>{
+      getGifs(categoria)
+    },[])
 
   return (
     <>
