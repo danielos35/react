@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { AddCategoria} from "./componentes/agregarCategoria";
+import { Gifs } from "./componentes/gifs";
 
 export const Buscador = () => {
-  const [busquedas, setBusquedas] = useState(["Musica", "Politica"]);
+  const [busquedas, setBusquedas] = useState(["Musica"]);
   const agregarCategorias = ( nuevaCategoria) => {
+
+    if(busquedas.includes(nuevaCategoria))return
     console.log(nuevaCategoria);
 
     // Forma 1
@@ -22,11 +25,12 @@ export const Buscador = () => {
       />
       
       <button onClick={agregarCategorias}>Agregar categoria</button>
-      <ol>
-        {busquedas.map((c) => (
-          <li key={c}>{c}</li>
+        {busquedas.map((categoria) => (
+          <Gifs 
+          key={categoria}
+          categoria={categoria}
+          />
         ))}
-      </ol>
     </>
   );
 };
