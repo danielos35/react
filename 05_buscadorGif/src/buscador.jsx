@@ -3,7 +3,7 @@ import { AddCategoria} from "./componentes/agregarCategoria";
 import { Gifs } from "./componentes/gifs";
 
 export const Buscador = () => {
-  const [busquedas, setBusquedas] = useState(["Musica"]);
+  const [busquedas, setBusquedas] = useState([]);
   const agregarCategorias = ( nuevaCategoria) => {
 
     if(busquedas.includes(nuevaCategoria))return
