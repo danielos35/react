@@ -1,18 +1,11 @@
-import { useEffect, useState } from "react"
-import { getGifs } from "../funciones/getGifs"
+
+import { useFetchGifs } from "../hooks/useFetchGifs";
 import { GifItem } from "./gifItem";
 
 export const Gifs = ({categoria}) => {
-    const [imagenes,setImagen] = useState([]); 
 
-    const asignarTitulos = async()=>{
-      const objetoGif = await getGifs(categoria);
-      setImagen(objetoGif);
-    }
-
-    useEffect(()=>{
-      asignarTitulos()
-    },[])
+    const { imagenes, isLoading} = useFetchGifs(categoria);
+   
 
   return (
     <>
