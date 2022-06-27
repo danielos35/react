@@ -7,4 +7,7 @@ CONSERVAR IMPRESIONES EN CONSOLA.
 ON
 - Cuando nombramos una funcionalidad como ON se refiere a que esté esta emitiendo un evento
 
+
+NULL
+- El null no se renderiza en React
 */

@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { AddCategoria} from "./componentes/agregarCategoria";
-import { Gifs } from "./componentes/gifs";
+import { AddCategoria,Gifs} from "./componentes";
 
 export const Buscador = () => {
   const [busquedas, setBusquedas] = useState([]);
