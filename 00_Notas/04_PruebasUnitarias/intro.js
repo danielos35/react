@@ -17,5 +17,30 @@ CARACTERISTICAS
 - Rapidas. 
 - Principalmente unitarias. 
 
+AAA (Arrange, Act, Assert).
+
+- Arrange: paso en el que establecemos el estado inicial.
+--- Incializamos variables.
+--- Importaciones necesarias.
+--- Preparamos el ambiente a probar.
+
+- Actuar: Donde aplicamos acciones o estimulos al sujeto de pruebas. 
+--- Llamamos metodos.
+--- Simulamos clicks.
+--- Realizar acciones sobre el paso anterior. 
+
+- Assert: Observar el comportamiento resultante. 
+--- Los resultados son los esperados. 
+--- Que algo cambie.
+
+
+MITOS
+- Hacen que mi aplicación no tenga errores. 
+- Las pruebas no pueden fallar (pueden arrojar falsos positivos). 
+- Las pruebas hacen lenta la aplicación (las pruebas no hacen parte de la aplicación que vamos a desplegar). 
+- Es una perdida de tiempo. 
+- Hay que probar todo. (Probar siempre la ruta critica).
+- 
+
 
 */ 
