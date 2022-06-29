@@ -10,4 +10,9 @@ CREAR SRIPT DE TEST
 
 CREAR OTRO DIRECTORIO
 - Directorio llamado test, que funcionar como una copia del src
+
+
+NOTAS
+- Debemos de configurar también babel dentro de nuestro proyecto:
+- npm install --save-dev babel-jest @babel/core @babel/preset-env
 */ 
