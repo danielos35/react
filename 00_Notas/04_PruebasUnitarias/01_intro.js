@@ -40,7 +40,9 @@ MITOS
 - Las pruebas hacen lenta la aplicación (las pruebas no hacen parte de la aplicación que vamos a desplegar). 
 - Es una perdida de tiempo. 
 - Hay que probar todo. (Probar siempre la ruta critica).
-- 
 
+
+NOTAS
+-  Cuando hayamos exportado un archivo, recurso o modulo, ese recurso debe de estár también en nuestro archivo de testing.
 
 */ 
