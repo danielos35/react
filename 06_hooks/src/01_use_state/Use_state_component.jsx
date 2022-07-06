@@ -2,16 +2,28 @@ import { useState } from "react"
 
 export const Use_state_component = () => {
     
-    const [counter,setCounter] = useState(10); 
+    // 
+    const [estado,setCounter] = useState({
+        contadorPrincipal:0,
+        contadorSecundario:0,
+        tercerContador:0,
+    })
     
 
 
     return (
         <>
-            <h1>{counter}</h1>
+            <h1>{estado.contadorPrincipal}</h1>
+            <h1>{estado.contadorSecundario}</h1>
+            <h1>{estado.tercerContador}</h1>
             <hr/>
             <button onClick={()=>{
-                setCounter(val=>val+1)
+                setCounter(({contadorPrincipal,contadorSecundario,tercerContador})=>{
+                    return {
+                        ...estado,
+                        contadorSecundario:contadorSecundario+1,
+                    }
+                })
             }} >+1</button>
         </>
   )
