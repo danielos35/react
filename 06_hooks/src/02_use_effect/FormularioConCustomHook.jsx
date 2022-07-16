@@ -1,7 +1,7 @@
 import { useForm } from "../hooks/useForm"
 export const FormularioConCustomHook = () => {
 
-    const { estadoFormulario:{ username, email, password}, oninputChange} = useForm({
+    const { estadoFormulario:{ username, email, password}, oninputChange, limpiarFormulario} = useForm({
         username : '',
         email : '',
         password : '',
@@ -41,6 +41,11 @@ export const FormularioConCustomHook = () => {
                 value={password}
                 onChange = {oninputChange}        
             />
+
+            <button className="btn btn-primary mt-2" onClick={limpiarFormulario} > Limpiar </button>
         </>
+
+
+        
     )
 }

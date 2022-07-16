@@ -12,9 +12,13 @@ export const useForm = ( initialForm = {} ) => {
         })
     }
 
+    const limpiarFormulario = ()=>{
+        setEstadoFormulario(initialForm); 
+    }
   
     return {
         estadoFormulario,
-        oninputChange
+        oninputChange, 
+        limpiarFormulario
     }
 }
