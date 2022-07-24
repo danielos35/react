@@ -5,6 +5,8 @@ import { FormularioConCustomHook } from "./02_use_effect/FormularioConCustomHook
 import { MultipleCustomHook } from "./03_examples/MultipleCustomHook"
 import { FocusScreen } from "./05_useRef/FocusScreen"
 import { Layout } from "./06_useLayoutEffect/Layout"
+import { Memorize } from "./07_memo/Memorize"
+import { MemoHook } from "./07_memo/MemoHook"
 
 export const HooksApp = () => {
   return (
@@ -15,7 +17,9 @@ export const HooksApp = () => {
       {/* <FormularioConCustomHook/> */}
       {/* <MultipleCustomHook/> */}
       {/* <FocusScreen /> */}
-      <Layout />
+      {/* <Layout /> */}
+      {/* <Memorize /> */}
+      <MemoHook />
     </>
   )
 }
