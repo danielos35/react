@@ -1,0 +1,7 @@
+html, body {
+    background: blue;
+    color: white;
+
+    /* En caso de no tener arial, pasa a sans-serif, podemos añadir las fuentes que sean necesarias */
+    font-size: Arial, Sans-serif;
+}
