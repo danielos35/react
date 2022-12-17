@@ -4,6 +4,8 @@
  *
  * */
 
+import PropTypes from "prop-types";
+
 const datos = {
   nombre: "Daniel",
   apellido: "Felipe",
@@ -31,4 +33,11 @@ export const App = function ({ title = "valor por defecto", numero }) {
       <h1>{unNombre()}</h1>
     </>
   );
+};
+
+/*TIPAR PROPIEDADES*/
+
+App.propTypes = {
+  title: PropTypes.string.isRequired,
+  numero: PropTypes.number.isRequired,
 };
