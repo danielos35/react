@@ -41,3 +41,9 @@ App.propTypes = {
   title: PropTypes.string.isRequired,
   numero: PropTypes.number.isRequired,
 };
+
+/* PROPIEDADES POR DEFECTO*/
+App.defaultProps = {
+  title: "Titulo por si las moscas",
+  number: 0,
+};
