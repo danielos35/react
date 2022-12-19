@@ -9,6 +9,9 @@ export const CounterApp = ({ value }) => {
    *
    * NO SE DEBEN DE MODIFICAR LOS VALORES DE UN UN HOOK FUERA DE SU FUNCION
    *
+   *
+   * CADA QUE TENGAMOS UN CAMBIO EN EL ESTADO EL COMPONENTE SE VUELVE A RENDERISAR
+   *
    * */
   const [counter, setCounter] = useState(value);
 
@@ -19,6 +22,9 @@ export const CounterApp = ({ value }) => {
     setCounter((valor_actual) => valor_actual + 1);
   };
 
+  const min_number = () => setCounter((valor_actual) => valor_actual - 1);
+  const reset = () => setCounter((valor_actual) => (valor_actual = 0));
+
   return (
     <>
       <h1>Counter APP</h1>
@@ -28,6 +34,8 @@ export const CounterApp = ({ value }) => {
       {/* El event va por defecto en el argumento */}
 
       <button onClick={add_number}>+1</button>
+      <button onClick={min_number}>-1</button>
+      <button onClick={reset}>Reset</button>
     </>
   );
 };
