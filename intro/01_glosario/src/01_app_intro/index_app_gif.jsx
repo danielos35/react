@@ -4,6 +4,7 @@ import "./styles.css";
 export const Index_app_gif = () => {
   const [categorias, setCategories] = useState([]);
   const onAddCategory = (categoria) => {
+    if (categorias.includes(categoria)) return;
     setCategories((data) => [...data, categoria]);
   };
   return (
@@ -12,8 +13,9 @@ export const Index_app_gif = () => {
         onNewCategory={(event) => onAddCategory(event)}
       ></AddCategory>
       <ol>
-        {categorias.map((categoria, indice) => (
-          <li key={indice}>{categoria}</li>
+        {/* NUNCA USAR EL INDICE DEL MAP */}
+        {categorias.map((categoria) => (
+          <li key={categoria}>{categoria}</li>
         ))}
       </ol>
     </>
