@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 import "./styles.css";
 export const Index_app_gif = () => {
   const [categorias, setCategories] = useState([]);
@@ -15,7 +16,7 @@ export const Index_app_gif = () => {
       <ol>
         {/* NUNCA USAR EL INDICE DEL MAP */}
         {categorias.map((categoria) => (
-          <li key={categoria}>{categoria}</li>
+          <GifGrid key={categoria} categoria={categoria} />
         ))}
       </ol>
     </>
