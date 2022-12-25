@@ -13,12 +13,12 @@ export const Index_app_gif = () => {
       <AddCategory
         onNewCategory={(event) => onAddCategory(event)}
       ></AddCategory>
-      <ol>
+      <div>
         {/* NUNCA USAR EL INDICE DEL MAP */}
         {categorias.map((categoria) => (
           <GifGrid key={categoria} categoria={categoria} />
         ))}
-      </ol>
+      </div>
     </>
   );
 };
