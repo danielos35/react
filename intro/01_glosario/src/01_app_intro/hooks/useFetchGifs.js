@@ -4,9 +4,11 @@ import { getGifs } from "../helpers/get_images";
 
 export const useFetchGifs = (categoria) => {
   const [img, setImages] = useState([]);
+  const [isLoading, setLoading] = useState(true);
   const getImages = async () => {
     const images = await getGifs(categoria);
     setImages((data) => (data = images));
+    setLoading((isLoading) => (isLoading = false));
   };
 
   /**
@@ -25,6 +27,6 @@ export const useFetchGifs = (categoria) => {
   }, []);
   return {
     img,
-    isLoading: true,
+    isLoading,
   };
 };
