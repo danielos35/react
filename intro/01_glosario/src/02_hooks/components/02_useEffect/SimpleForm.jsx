@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Message } from "./Message";
 
 export const SimpleForm = () => {
   const [form, setForm] = useState({
@@ -11,13 +12,16 @@ export const SimpleForm = () => {
   };
 
   // USE EFECT cambio dependiendo del cambio de algun valor
-  useEffect(() => {
-    console.log("El usuario cambió");
-  }, [form.username]);
+  /**
+   * PARTES DEL USE EFECT
+   * - Callback, accion a realizar
+   * - Dependencia, accion a realizar
+   * - Returno (Funciona como el ngOndestroy)
+   * */
 
-  useEffect(() => {
-    console.log("El email cambió");
-  }, [form.email]);
+  useEffect(() => {}, [form.username]);
+
+  useEffect(() => {}, [form.email]);
 
   return (
     <>
@@ -39,6 +43,8 @@ export const SimpleForm = () => {
         value={form.email}
         onChange={changeValue}
       />
+
+      {form.username === "Daniel" && <Message />}
     </>
   );
 };
