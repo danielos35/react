@@ -2,6 +2,7 @@ import {
   UseStateComponent,
   CounterWithCustomHook,
   SimpleForm,
+  FormWithCustomHook,
 } from "./components";
 
 export const Index_hook = () => {
@@ -9,7 +10,8 @@ export const Index_hook = () => {
     <>
       {/* <UseStateComponent /> */}
       {/* <CounterWithCustomHook /> */}
-      <SimpleForm />
+      {/* <SimpleForm /> */}
+      <FormWithCustomHook />
     </>
   );
 };
