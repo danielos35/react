@@ -3,6 +3,7 @@ import {
   CounterWithCustomHook,
   SimpleForm,
   FormWithCustomHook,
+  MultipleCustomHooks,
 } from "./components";
 
 export const Index_hook = () => {
@@ -11,7 +12,8 @@ export const Index_hook = () => {
       {/* <UseStateComponent /> */}
       {/* <CounterWithCustomHook /> */}
       {/* <SimpleForm /> */}
-      <FormWithCustomHook />
+      {/* <FormWithCustomHook /> */}
+      <MultipleCustomHooks />
     </>
   );
 };
