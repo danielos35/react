@@ -7,10 +7,11 @@ export const CallBackHook = () => {
     /**
      * USE CALLBACK 
      * -  Lo puede usar con la intención de memorizar funciones
+     * -  Las funciones pueden recibir argumentos
      * */ 
  
-    const incrementFather = useCallback(()=>{
-        setCounter((v)=> v+1);
+    const incrementFather = useCallback((value = 1)=>{
+        setCounter((v)=> v+value);
      },[])
 
 
