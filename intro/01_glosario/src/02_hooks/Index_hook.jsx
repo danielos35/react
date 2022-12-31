@@ -9,6 +9,7 @@ import {
   Memorize,
   MemorizeHook,
   CallBackHook,
+  Padre,
 } from "./components";
 
 export const Index_hook = () => {
@@ -23,7 +24,8 @@ export const Index_hook = () => {
       {/* <Layout/> */}
       {/* <Memorize/> */}
       {/* <MemorizeHook/> */}
-      <CallBackHook/>
+      {/* <CallBackHook/> */}
+      <Padre/>
     </>
   );
 };
