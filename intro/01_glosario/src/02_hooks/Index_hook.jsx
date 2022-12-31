@@ -8,6 +8,7 @@ import {
   Layout,
   Memorize,
   MemorizeHook,
+  CallBackHook,
 } from "./components";
 
 export const Index_hook = () => {
@@ -21,7 +22,8 @@ export const Index_hook = () => {
       {/* <FocusScreen/> */}
       {/* <Layout/> */}
       {/* <Memorize/> */}
-      <MemorizeHook/>
+      {/* <MemorizeHook/> */}
+      <CallBackHook/>
     </>
   );
 };

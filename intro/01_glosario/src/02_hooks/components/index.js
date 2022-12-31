@@ -5,5 +5,6 @@ export * from "./02_useEffect/FormularioCustomHook";
 export * from "./02_useEffect/MultipleCustomHooks"; 
 export * from "./03_UseRef/FocusScreen"; 
 export * from "./04_UseLayoutEffect/Layout"; 
-export * from "./05_Memos/Memorize";
-export * from "./05_Memos/MemorizeHook"; 
+export * from "./05_useMemo(memos)/Memorize";
+export * from "./05_useMemo(memos)/MemorizeHook";
+export * from "./06_useCallback(memos)/CallBackHook"; 
