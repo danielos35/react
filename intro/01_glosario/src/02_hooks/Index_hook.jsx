@@ -4,6 +4,7 @@ import {
   SimpleForm,
   FormWithCustomHook,
   MultipleCustomHooks,
+  FocusScreen,
 } from "./components";
 
 export const Index_hook = () => {
@@ -13,7 +14,8 @@ export const Index_hook = () => {
       {/* <CounterWithCustomHook /> */}
       {/* <SimpleForm /> */}
       {/* <FormWithCustomHook /> */}
-      <MultipleCustomHooks />
+      {/* <MultipleCustomHooks /> */}
+      <FocusScreen/>
     </>
   );
 };
