@@ -6,6 +6,8 @@ import {
   MultipleCustomHooks,
   FocusScreen,
   Layout,
+  Memorize,
+  MemorizeHook,
 } from "./components";
 
 export const Index_hook = () => {
@@ -17,7 +19,9 @@ export const Index_hook = () => {
       {/* <FormWithCustomHook /> */}
       {/* <MultipleCustomHooks /> */}
       {/* <FocusScreen/> */}
-      <Layout/>
+      {/* <Layout/> */}
+      {/* <Memorize/> */}
+      <MemorizeHook/>
     </>
   );
 };
