@@ -4,3 +4,4 @@ export * from "./02_useEffect/SimpleForm";
 export * from "./02_useEffect/FormularioCustomHook"; 
 export * from "./02_useEffect/MultipleCustomHooks"; 
 export * from "./03_UseRef/FocusScreen"; 
+export * from "./04_UseLayoutEffect/Layout"; 
