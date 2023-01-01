@@ -15,4 +15,25 @@
  * - Usualmente recibe dos argumento (El estado inicial y la acción que quiero ejecutar)
  * */
 
-const todoReducer = () => {};
+
+//EJEMPLO 
+
+const initialTools = [
+  {
+    id: 1,
+    todo: "Comprar pan",
+    done: "false",
+  },
+];
+
+const todoReducer = (state = initialTools, action) => {
+  return state;
+};
+
+
+/**
+ * CICLO DE VIDA DE UN REDUCER
+ * - Estado inicial
+ * - Mostrar componente
+ * - Accción para no modificar el estado directamente
+ * */
