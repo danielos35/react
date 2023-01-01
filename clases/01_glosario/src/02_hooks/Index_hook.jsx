@@ -10,6 +10,7 @@ import {
   MemorizeHook,
   CallBackHook,
   Padre,
+  Index_reduce,
 } from "./components";
 
 export const Index_hook = () => {
@@ -25,7 +26,8 @@ export const Index_hook = () => {
       {/* <Memorize/> */}
       {/* <MemorizeHook/> */}
       {/* <CallBackHook/> */}
-      <Padre/>
+      {/* <Padre/> */}
+      <Index_reduce/>
     </>
   );
 };

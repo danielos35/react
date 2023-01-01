@@ -9,3 +9,4 @@ export * from "./05_useMemo(memos)/Memorize";
 export * from "./05_useMemo(memos)/MemorizeHook";
 export * from "./06_useCallback(memos)/CallBackHook"; 
 export * from "./07_tareaMemos/Padre"; 
+export * from "./08_reducer/Index_reduce";
