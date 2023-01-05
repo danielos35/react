@@ -18,6 +18,10 @@ export const TodoApp = () => {
         },
     ]
 
+    const handleNewTodo = (data) => {
+        console.log(data);
+    }
+
 
     const [todos, dispatch] = useReducer(todoReducer,initalState);
     return (
@@ -28,7 +32,7 @@ export const TodoApp = () => {
 
             <div className="row">
                 <TodoList todo={[]}/>
-                <TodoAdd/>
+                <TodoAdd emitTodo={(e)=>handleNewTodo(e)} />
             </div>
         </>
     )

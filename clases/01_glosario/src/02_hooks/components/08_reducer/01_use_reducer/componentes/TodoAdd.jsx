@@ -1,6 +1,11 @@
 import React from 'react'
 
-export const TodoAdd = () => {
+export const TodoAdd = ({emitTodo}) => {
+
+    const sendData = () => {
+        emitTodo('gente')
+    }
+
   return (
     <div className="col-5">
         <h4>Agregar TODO</h4>
@@ -13,8 +18,9 @@ export const TodoAdd = () => {
             />
 
             <button
-                type="submit"
+                // type="submit"
                 className="btn btn-outline-primary mt-1"
+                onClick={()=>{sendData()}}
             >
                 Agregar Elemento
             </button>
