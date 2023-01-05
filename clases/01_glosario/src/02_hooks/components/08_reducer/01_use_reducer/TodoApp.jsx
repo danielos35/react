@@ -1,6 +1,7 @@
 import { useReducer } from "react"
-import { TodoList } from "./componentes";
-import { todoReducer } from "./todoReducer";
+import { TodoList , TodoAdd } from "./componentes";
+
+import { todoReducer} from "./todoReducer";
 
 export const TodoApp = () => {
 
@@ -26,27 +27,8 @@ export const TodoApp = () => {
             <hr/>
 
             <div className="row">
-     
                 <TodoList todo={[]}/>
-     
-                <div className="col-5">
-                    <h4>Agregar TODO</h4>
-                    <hr/>
-                    <form>
-                        <input
-                            type="text"
-                            placeholder="Que hay que hacer?"
-                            className="form-control"
-                        />
-
-                        <button
-                            type="submit"
-                            className="btn btn-outline-primary mt-1"
-                        >
-                            Agregar Elemento
-                        </button>
-                    </form>
-                </div>
+                <TodoAdd/>
             </div>
         </>
     )
