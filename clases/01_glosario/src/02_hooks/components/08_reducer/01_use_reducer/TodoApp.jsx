@@ -1,4 +1,5 @@
 import { useReducer } from "react"
+import { TodoList } from "./componentes";
 import { todoReducer } from "./todoReducer";
 
 export const TodoApp = () => {
@@ -26,18 +27,7 @@ export const TodoApp = () => {
 
             <div className="row">
      
-                <div className="col-7">
-                    <ul className="list-group">
-                        <li className="list-group-item d-flex justify-content-between">
-                            <span className="align-self-center">
-                                Item 1
-                            </span>
-                            <button className="btn btn-danger">
-                                Eliminar
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                <TodoList todo={[]}/>
      
                 <div className="col-5">
                     <h4>Agregar TODO</h4>
