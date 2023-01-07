@@ -31,7 +31,7 @@ export const TodoApp = () => {
             <hr/>
 
             <div className="row">
-                <TodoList todo={[]}/>
+                <TodoList todo={todos}/>
                 <TodoAdd emitTodo={(e)=>handleNewTodo(e)} />
             </div>
         </>
