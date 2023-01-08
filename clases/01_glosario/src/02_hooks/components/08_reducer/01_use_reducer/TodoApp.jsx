@@ -5,21 +5,15 @@ import { todoReducer} from "./todoReducer";
 
 export const TodoApp = () => {
 
-    const initalState =  [
-        {
-            id:new Date().getTime(),
-            description:'hacer pan', 
-            don: false
-        },
-        {
-            id:new Date().getTime() * 3,
-            description:'hacer arroz', 
-            don: false
-        },
-    ]
+    const initalState =  []
 
-    const handleNewTodo = (data) => {
-        console.log(data);
+    const handleNewTodo = (todo) => {
+        const action = {
+            type:'[TODO] add todo',
+            payload:todo
+        }
+
+        dispatch(action);
     }
 
 
