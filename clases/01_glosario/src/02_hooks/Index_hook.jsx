@@ -11,6 +11,7 @@ import {
   CallBackHook,
   Padre,
   Index_reduce,
+  Index_use_context
 } from "./components";
 
 export const Index_hook = () => {
@@ -27,7 +28,8 @@ export const Index_hook = () => {
       {/* <MemorizeHook/> */}
       {/* <CallBackHook/> */}
       {/* <Padre/> */}
-      <Index_reduce/>
+      {/* <Index_reduce/> */}
+      <Index_use_context/>
     </>
   );
 };

@@ -34,21 +34,13 @@ export const useTodo = () => {
     });
   };
 
-  const counterTodo = (todos = []) => {
-    return todos.length;
-  };
-
-  const pendientesTodo = (todos = []) => {
-    return todos.filter((res) => !res.done).length;
-  };
-
   return {
     todos,
     dispatch,
     handleDeleteTodo,
     handleNewTodo,
     handleToggleTodo,
-    counterTodo,
-    pendientesTodo,
+    counterTodo: todos.length,
+    pendientesTodo: todos.filter((res) => !res.done).filter,
   };
 };
