@@ -3,6 +3,9 @@ export const todoReducer = (initialState = [], action) => {
     case "[TODO] add todo":
       return [...initialState, action.payload];
 
+    case "[TODO] remove todo":
+      return initialState.filter((todo) => todo.id !== action.payload);
+
     default:
       return initialState;
   }

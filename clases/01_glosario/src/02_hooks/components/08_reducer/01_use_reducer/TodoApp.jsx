@@ -5,7 +5,8 @@ import { todoReducer} from "./todoReducer";
 
 const initalState =  []
 const init = () => {
-    return JSON.parse(localStorage.getItem('todos') || []);
+    console.log(localStorage.getItem('todos'));
+    // return JSON.parse(localStorage.getItem('todos') || []);
 }
 
 export const TodoApp = () => {
@@ -25,6 +26,13 @@ export const TodoApp = () => {
         dispatch(action);
     }
 
+    const handleDeleteTodo = ( id ) => {
+        dispatch({
+            type: "[TODO] remove todo", 
+            payload: id
+        })
+    }
+
   
     return (
 
@@ -33,7 +41,7 @@ export const TodoApp = () => {
             <hr/>
 
             <div className="row">
-                <TodoList todo={todos}/>
+                <TodoList todo={todos} onDeleteTodo={ id => handleDeleteTodo(id) } />
                 <TodoAdd emitTodo={(e)=>handleNewTodo(e)} />
             </div>
         </>
