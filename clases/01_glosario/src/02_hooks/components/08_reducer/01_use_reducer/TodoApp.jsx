@@ -1,11 +1,20 @@
-import { useReducer } from "react"
+import { useEffect, useReducer } from "react"
 import { TodoList , TodoAdd } from "./componentes";
 
 import { todoReducer} from "./todoReducer";
 
+const initalState =  []
+const init = () => {
+    return JSON.parse(localStorage.getItem('todos') || []);
+}
+
 export const TodoApp = () => {
 
-    const initalState =  []
+    const [todos, dispatch] = useReducer(todoReducer, initalState, init);
+
+    useEffect(()=>{
+        localStorage.setItem('todos', JSON.stringify(todos) || []);
+    },[todos])
 
     const handleNewTodo = (todo) => {
         const action = {
@@ -16,8 +25,7 @@ export const TodoApp = () => {
         dispatch(action);
     }
 
-
-    const [todos, dispatch] = useReducer(todoReducer,initalState);
+  
     return (
 
         <>
