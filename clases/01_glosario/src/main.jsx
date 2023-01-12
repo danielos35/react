@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Index_hero } from "./heroes/index_hero";
 // import { Index_app_gif } from "./01_app_intro/index_app_gif";
-import { Index_hook } from "./02_hooks/index_hook";
+// import { Index_hook } from "./02_hooks/index_hook";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Index_hook />
+    {/* <Index_hook /> */}
     {/* <Index_app_gif /> */}
+    <Index_hero />
   </React.StrictMode>
 );
