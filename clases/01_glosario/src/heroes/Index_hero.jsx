@@ -1,7 +1,11 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
+import { Main_hero } from './Main_hero';
 
 export const Index_hero = () => {
     return (
-        <div>index_hero</div>
+        <BrowserRouter>
+            <Main_hero />
+        </BrowserRouter>
     )
 }
