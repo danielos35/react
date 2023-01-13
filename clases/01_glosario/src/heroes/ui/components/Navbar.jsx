@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
 
             <Link
                 className="navbar-brand"
@@ -31,14 +31,23 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
                 <ul className="navbar-nav ml-auto">
-                    <NavLink
+                    <span className="nav-item nav-link text-primary mr-5">
+                        Test
+                    </span>
+
+                    <button
+                        className="nav-item nav-link btn"
+                    >
+                        Logout
+                    </button>
+                    {/* <NavLink
                         className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
                         to="/login"
                     >
                         Logout
-                    </NavLink>
+                    </NavLink> */}
                 </ul>
             </div>
         </nav>
