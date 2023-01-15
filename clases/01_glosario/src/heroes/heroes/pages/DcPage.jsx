@@ -1,4 +1,4 @@
-import { HeroList } from "../components/HeroList";
+import { HeroList } from "../components";
 import { heroes } from "../data/heroes"
 
 const data = heroes;
