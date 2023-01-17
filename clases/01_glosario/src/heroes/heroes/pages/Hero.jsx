@@ -6,7 +6,7 @@ export const Hero = () => {
     const hero = getHeroByID(heroId);
     const navigate = useNavigate()
     const onNavigateBack = () => {
-        navigate('/marvel')
+        navigate(-1)
     }
 
     if (!hero) {
